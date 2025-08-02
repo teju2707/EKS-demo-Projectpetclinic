@@ -7,7 +7,7 @@ pipeline {
         ECR_REPOSITORY = 'new/imp-repo'
         IMAGE_TAG = "${env.BUILD_NUMBER}"
         IMAGE_NAME = "${ECR_REGISTRY}/${ECR_REPOSITORY}"
-        AWS_CREDENTIALS_ID = 'aws-ecr-credentials'
+        AWS_CREDENTIALS_ID = 'aws-credentials'
         HELM_RELEASE_NAME = 'petclinic-app'
         HELM_CHART_PATH = './helm/petclinic'
         K8S_NAMESPACE = 'default'
