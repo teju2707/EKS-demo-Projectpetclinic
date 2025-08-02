@@ -44,4 +44,12 @@ nodeSelector: {}                                           # Node affinity setti
 
 tolerations: []                                            # Pod tolerations, if needed for tainted nodes
 
-affinity: {}                                              # Affinity rules for pod scheduling
+affinity: {}                                            # Affinity rules for pod scheduling
+
+
+
+ingress:
+  enabled: false            # Disable ingress by default
+  annotations: {}
+  hosts: []
+  tls: []
